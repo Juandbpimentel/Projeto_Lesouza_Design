@@ -1,0 +1,16 @@
+#signature {
+    width: 800px;
+    height: 800px;
+    background-color: white;
+}
+
+button {
+    width: 400px;
+    height: 70px;
+    font-size: 3em;
+    text-align: center;
+}
+
+button:hover{
+    background-color: rgb(152, 186, 250);
+}
