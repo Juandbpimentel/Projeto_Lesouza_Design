@@ -4,13 +4,13 @@ const displayButton = document.querySelector('#display');
 const downloadButton = document.querySelector('#download');
 const ctx = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = 800;
+canvas.height = 800;
 
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 20;
-ctx.strokeStyle = '#000000';
+ctx.strokeStyle = '#272631';
 
 let isDrawing = false;
 let lastX = 0;

@@ -2,6 +2,7 @@
     width: 800px;
     height: 800px;
     background-color: white;
+    display: flex;
 }
 
 button {
@@ -12,5 +13,5 @@ button {
 }
 
 button:hover{
-    background-color: rgb(152, 186, 250);
+    background-color: #98bafa;
 }
