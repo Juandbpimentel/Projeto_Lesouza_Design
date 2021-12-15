@@ -17,8 +17,7 @@ let lastX = 0;
 let lastY = 0;
 
 function draw(e) {
-    if(!isDrawing)
-        return;
+    if(!isDrawing) return;
     console.log(e);
     ctx.beginPath();
     ctx.moveTo(lastX, lastY);
