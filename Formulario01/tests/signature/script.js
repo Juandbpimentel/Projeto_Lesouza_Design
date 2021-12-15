@@ -17,7 +17,8 @@ let lastX = 0;
 let lastY = 0;
 
 function draw(e) {
-    if(!isDrawing) return;
+    if(!isDrawing)
+        return;
     console.log(e);
     ctx.beginPath();
     ctx.moveTo(lastX, lastY);
@@ -27,7 +28,7 @@ function draw(e) {
 }
 
 function clear() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 function display() {
@@ -49,6 +50,5 @@ canvas.addEventListener('mouseup', () => isDrawing = false);
 canvas.addEventListener('mouseout', () => isDrawing = false);
 
 clearButton.addEventListener('click', clear);
-displayButton.addEventListener('click', display)
-downloadButton.addEventListener('click', download)
-
+displayButton.addEventListener('click', display);
+downloadButton.addEventListener('click', download);
