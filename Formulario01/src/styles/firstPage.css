@@ -176,6 +176,24 @@ h1 {
 
 .content .contentItem {
     margin-left: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.continue {
+    width: 300px;
+    height: 50px;
+    margin: 60px 0 60px 0;
+    border-radius: 10px;
+    color: white;
+    background-color: #D65391;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.continue:hover {
+    background-color: #b5467a;
 }
 
