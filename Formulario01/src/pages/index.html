@@ -5,13 +5,69 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
   <title>LSDesign</title>
-  <link rel="stylesheet" href="../styles/style.css" />
-  <link rel="stylesheet" href="../styles/darkmode.css">
+  <link rel="stylesheet" href="../styles/firstPage.css" />
 </head>
 
 <body>
+    <div class="container">
+        <div class="loader">
+            <div class="circle first"></div>
+            <div class="circle second"></div>
+            <div class="circle third"></div>
+            <div class="completed"></div>
+        </div>  
+        
+        <h1>Seleção de pacotes</h1>
+
+        <div class="cards">
+            <div class="card">
+                <label class="customRadio">
+                    <input type="radio" name="package">
+                    <span class="checkmark"></span>
+                </label>  
+
+                <div class="head">
+                    <p>Simples</p>
+                    <p>189,00 R$</p>
+                </div>
+
+                <div class="line"></div>
+
+                <ul class="content"> 
+                    <li class="contentItem">
+                        <img src="../assets/doneIcon.svg" alt="">
+                        <p>Logotipo</p>
+                    </li>
+                    <li class="contentItem">
+                        <img src="../assets/doneIcon.svg" alt="">
+                        <p>Icone</p>
+                    </li>
+                    <li class="contentItem">
+                        <img src="../assets/doneIcon.svg" alt="">
+                        <p>Marca D'água</p>
+                    </li>
+                    <li class="contentItem">
+                        <img src="../assets/doneIcon.svg" alt="">
+                        <p>Tipografia</p>
+                    </li>
+                    <li class="contentItem">
+                        <img src="../assets/doneIcon.svg" alt="">
+                        <p>Paleta de Cores</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>  
+
+
+
   <!--nome, sobrenome, email, cpf, whatsapp, assinatura-->
+  <!--
   <form action="/pagina-processa-dados-do-form" method="post">
     <div>
       <label for="nome">Nome:</label>
@@ -28,11 +84,12 @@
     </div>
     <div>
       <label for="number">Whatsapp:</label>
-      <input type="tel" id="number" name="tel[]" class="masked-phone" data-phonemask="(__) _____-____" >
+      <input type="tel" name="number" id="number">
     </div>
   </form>
   <script src="../scripts/cpf.js"></script>
   <script src="../scripts/phone-mask.min.js"></script>
+  -->
 </body>
 
 </html>
