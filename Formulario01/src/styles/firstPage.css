@@ -89,9 +89,14 @@ h1 {
     box-shadow: 20px 20px 50px -30px rgba(0, 0, 0, 0.056);
     background-color: white;
     border-radius: 10px;
+    border: 2px solid transparent;
     position: relative;
+    transition: border 0.3s ease;
 }
 
+.card:hover {
+    border: 2px solid #D65391;
+}    
 /* -- Custom Radio -- */
 
 .customRadio {
@@ -104,6 +109,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .customRadio .checkmark {
@@ -145,12 +151,11 @@ h1 {
 }
 
 .line {
-    width: 300px;
+    width: 100%;
     height: 3px;
     background-color: #D65391;
     margin-top: 50px;
 }
-
 
 /* -- Content Text -- */
 
