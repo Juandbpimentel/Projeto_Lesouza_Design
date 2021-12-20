@@ -27,7 +27,7 @@ function draw(e) {
 }
 
 function clear() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 function display() {
@@ -49,6 +49,5 @@ canvas.addEventListener('mouseup', () => isDrawing = false);
 canvas.addEventListener('mouseout', () => isDrawing = false);
 
 clearButton.addEventListener('click', clear);
-displayButton.addEventListener('click', display)
-downloadButton.addEventListener('click', download)
-
+displayButton.addEventListener('click', display);
+downloadButton.addEventListener('click', download);
