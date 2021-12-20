@@ -47,9 +47,3 @@ function TestaCPF(strCPF) {
     if (Resto != parseInt(strCPF.substring(10, 11))) return false;
     return true;
 }
-
-function checaMinhaPica(bool) {
-    if (bool) {
-        console.log("Tá dura");
-    } else console.log("Tá mole");
-}
