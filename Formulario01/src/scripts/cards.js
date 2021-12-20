@@ -6,12 +6,10 @@ function mark() {
         if (radio[i].type === 'radio' && radio[i].checked) {
             try {
                 card.removeAttribute("style");
-            } catch (error) {
-            }
-            
-            let label = radio[i].parentNode;
-            card = label.parentNode;
-            card.style.cssText = 'border: 3px solid #D65391;';
+            } catch (error) {}
+        
+            card = radio[i].parentNode;
+            card.style.cssText = 'border-color: #D65391;';
         }
     }
 }

@@ -84,68 +84,84 @@ h1 {
 }
 
 .card {
-    width: 300px;
-    height: 670px;
-    box-shadow: 20px 20px 50px -30px rgba(0, 0, 0, 0.056);
-    background-color: white;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     border: 2px solid transparent;
-    position: relative;
-    transition: border 0.3s ease;
+    border-radius: 10px;
+    transition: border 0.2s ease;
 }
 
 .card:hover {
     border: 2px solid #D65391;
-}    
+}
+
+.contentBody {
+    width: 300px;
+    height: 630px;
+    box-shadow: 20px 20px 50px -30px rgba(0, 0, 0, 0.056);
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    transition: border 0.3s ease;
+}
+  
 /* -- Custom Radio -- */
 
-.customRadio {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #D65391;
-    border-radius: 50%;
-    margin-left: 90%;
-    margin-top: 3%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.customRadio .checkmark {
-    width: calc(100% - 6px);
-    height: calc(100% - 6px);
-    border-radius: 50%;
-    background-color: #D65391;
-    display: inline-block;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.customRadio input {
+input[type="radio"] {
     display: none;
 }
 
-.customRadio input:checked + .checkmark {
-    display: inline-block;
-    opacity: 1;
+.customRadio {
+    position: relative;
+    width: 300px;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.customRadio .circle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #D65391;
+    background-color: white;
+    border-radius: 50%;
+    left: 90%;
+    top: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customRadio .point {
+    position: absolute;
+    height: calc(100% - 6px);
+    width: calc(100% - 6px);
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color .2s ease;
+}
+
+input[type="radio"]:checked + .customRadio .point {
+    background-color: #D65391;
 }
 
 /* -- Head Text -- */
-.card .head {
+.head {
     position: absolute;
-    top: 2%;
+    top: 20%;
     left: 8%;
     line-height: 1.3;
 }
 
-.card .head > p:first-child{
+.head > p:first-child {
     color: #D65391;
     font-size: 18px;
     font-weight: 600;
 }
 
-.card .head > p:nth-child(2) {
+.head > p:nth-child(2) {
     font-size: 25px;
     font-weight: 500;
 }
@@ -154,7 +170,6 @@ h1 {
     width: 100%;
     height: 3px;
     background-color: #D65391;
-    margin-top: 50px;
 }
 
 /* -- Content Text -- */
@@ -176,7 +191,7 @@ h1 {
 }
 
 .content .contentItem p {
-    max-width: 80%;
+    max-width: 75%;
 }
 
 .content .contentItem {
@@ -201,4 +216,3 @@ h1 {
 .continue:hover {
     background-color: #b5467a;
 }
-
