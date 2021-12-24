@@ -10,7 +10,7 @@ export default () => {
             <div class="completed" style="width: 52%;"></div>
         </div>  
         
-        <h1><a href="/src/pages/index.html#"><img src="../assets/back.svg" alt=""></a>Formulário</h1>
+        <h1><a href="/Formulario01/src/pages/index.html#"><img src="../assets/back.svg" alt=""></a>Formulário</h1>
     
         <form action="/pagina-processa-dados-do-form" method="post">
             <div class="formContainer">
@@ -37,7 +37,7 @@ export default () => {
             </div>
         </form>
     
-      <a href="/src/pages/index.html#" class="continue">Continuar</a>
+      <a href="/Formulario01/src/pages/index.html#" class="continue">Continuar</a>
     `;
 
     container.innerHTML = template;

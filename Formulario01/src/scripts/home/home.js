@@ -330,7 +330,7 @@ export default () => {
         </div>
     </div>
 
-    <a href="/src/pages/index.html#form" class="continue">Continuar</a>
+    <a href="/Formulario01/src/pages/index.html#form" class="continue">Continuar</a>
     `;
 
     container.innerHTML = template;
