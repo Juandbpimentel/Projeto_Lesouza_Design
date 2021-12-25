@@ -37,7 +37,9 @@ export default () => {
             </div>
         </form>
     
-      <a href="/Formulario01/src/pages/index.html#" class="continue">Continuar</a>
+      <a id="sendEmail" class="continue">Enviar</a>
+
+      <script src="../scripts/sendData.js"></script>
     `;
 
     container.innerHTML = template;
