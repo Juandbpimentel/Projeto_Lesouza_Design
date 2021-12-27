@@ -1,6 +1,3 @@
-const btn = document.querySelector('#sendEmail');
-console.log('Funfou');
-
 function mapObject() {
     const person = {
         firstname: document.querySelector('#nome').value,
@@ -24,13 +21,7 @@ async function submit(e) {
         },
         body: JSON.stringify(obj)
     };
-    e.preventDefault();
+    //e.preventDefault();
     const response = await fetch('http://localhost:5000/send-email', options);
     //console.log(options.body);
 }
-
-function printar() {
-    console.log('Hello world!');
-}
-
-btn.addEventListener('click', printar);

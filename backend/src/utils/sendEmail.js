@@ -23,7 +23,8 @@ module.exports = {
             text: 'sample text',
             subject: 'sample subject',
             from: `Marcus <${process.env.EMAIL}>`,
-            to: ['marcusdavi.soar@gmail.com'],
+            to: ['marcusdavi.soar@gmail.com',
+                'ryck302@gmail.com'],
             html: template.set(e)
         });
         console.log('Email enviado com sucesso!');
