@@ -1,0 +1,38 @@
+.formContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+img {
+    height: 30px;
+    width: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    align-items: flex-start;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    box-shadow: 20px 20px 50px -30px rgba(0, 0, 0, 0.056);
+    outline-color: #D65391;
+    outline-width: 0.4px;
+    padding: 20px;
+    font-size: 17px;
+}
+
+
+
+

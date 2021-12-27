@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #F2F3F5;
+    height: 100%;
+    width: 100%;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1080px;
+    margin-top: 50px;
+}
+
+/* Css para o loader */
+
+.loader {
+    width: 65.64%;
+    height: 10px;
+    background-color: #D8D8D8;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.completed {
+    width: 11%;
+    height: 10px;
+    background-color: #D65391;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    background-color: #C4C4C4;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.first {
+    top: -40%;
+    left: 10%;
+    background-color: #D65391;
+}
+
+.second {
+    top: -40%;
+    left: 50%;
+}
+
+.third {
+    top: -40%;
+    left: 90%;
+}
+
+h1 {
+    align-self: flex-start;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Grid e Fomato dos cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border 0.2s ease;
+}
+
+.card:hover {
+    border: 2px solid #D65391;
+}
+
+.contentBody {
+    height: 630px;
+    box-shadow: 20px 20px 50px -30px rgba(0, 0, 0, 0.056);
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    transition: border 0.3s ease;
+}
+  
+/* -- Custom Radio -- */
+
+input[type="radio"] {
+    display: none;
+}
+
+.customRadio {
+    position: relative;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.customRadio .circle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #D65391;
+    background-color: white;
+    border-radius: 50%;
+    left: 90%;
+    top: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customRadio .point {
+    position: absolute;
+    height: calc(100% - 6px);
+    width: calc(100% - 6px);
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color .2s ease;
+}
+
+input[type="radio"]:checked + .customRadio .point {
+    background-color: #D65391;
+}
+
+/* -- Head Text -- */
+.head {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    line-height: 1.3;
+}
+
+.head > p:first-child {
+    color: #D65391;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.head > p:nth-child(2) {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #D65391;
+}
+
+/* -- Content Text -- */
+
+.content .contentItem {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.content li:first-child {
+    margin-top: 20px;
+}
+
+.content .contentItem img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.content .contentItem p {
+    max-width: 75%;
+}
+
+.content .contentItem {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.continue {
+    width: 300px;
+    height: 50px;
+    margin: 60px 0 60px 0;
+    border-radius: 10px;
+    color: white;
+    background-color: #D65391;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.continue:hover {
+    background-color: #b5467a;
+}
+
