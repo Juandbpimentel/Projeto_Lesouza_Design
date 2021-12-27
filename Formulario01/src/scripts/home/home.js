@@ -18,7 +18,7 @@ export default () => {
             <label class="customRadio" for="teste">
                 <div class="head">
                     <p>Simples</p>
-                    <p>189,00 R$</p>
+                    <p>R$ 189,00</p>
                 </div>
                 <div class="circle">
                     <div class="point"></div>
@@ -58,7 +58,7 @@ export default () => {
             <label class="customRadio" for="teste1">
                 <div class="head">
                     <p>Completo</p>
-                    <p>250,00 R$</p>
+                    <p>R$ 250,00</p>
                 </div>
                 <div class="circle">
                     <div class="point"></div>
@@ -122,7 +122,7 @@ export default () => {
             <label class="customRadio" for="teste2">
                 <div class="head">
                     <p>Instagram</p>
-                    <p>299,99 R$</p>
+                    <p>R$ 299,99</p>
                 </div>
                 <div class="circle">
                     <div class="point"></div>
@@ -190,7 +190,7 @@ export default () => {
             <label class="customRadio" for="teste3">
                 <div class="head">
                     <p>Empreendedor</p>
-                    <p>349,99 R$</p>
+                    <p>R$ 349,99</p>
                 </div>
                 <div class="circle">
                     <div class="point"></div>
@@ -262,7 +262,7 @@ export default () => {
             <label class="customRadio" for="teste4">
                 <div class="head">
                     <p>Master</p>
-                    <p>499,99 R$</p>
+                    <p>R$ 499,99</p>
                 </div>
                 <div class="circle">
                     <div class="point"></div>
