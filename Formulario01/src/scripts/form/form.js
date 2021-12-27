@@ -7,7 +7,7 @@ export default () => {
             <div class="circle first"></div>
             <div class="circle second" style="background-color:#D65391;"></div>
             <div class="circle third"></div>
-            <div class="completed" style="width: 52%;"></div>
+            <div class="completed" style="width: 47%;"></div>
         </div>  
         
         <h1><a href="/Formulario01/src/pages/index.html#"><img src="../assets/back.svg" alt=""></a>Formulário</h1>
