@@ -43,7 +43,7 @@ body {
 }
 
 .completed {
-    width: 11%;
+    width: 12%;
     height: 10px;
     background-color: #D65391;
     border-radius: 10px;
@@ -66,12 +66,12 @@ body {
 
 .second {
     top: -40%;
-    left: 50%;
+    left: 45%;
 }
 
 .third {
     top: -40%;
-    left: 90%;
+    left: 85%;
 }
 
 h1 {
@@ -88,6 +88,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    width: 100%;
 }
 
 .card {
@@ -205,7 +206,7 @@ input[type="radio"]:checked + .customRadio .point {
 }
 
 .continue {
-    width: 300px;
+    width: 31%;
     height: 50px;
     margin: 60px 0 60px 0;
     border-radius: 10px;
@@ -224,6 +225,7 @@ input[type="radio"]:checked + .customRadio .point {
 .continue:hover {
     background-color: #b5467a;
 }
+
 
 @media (max-width: 1115px){
     .card{
@@ -299,5 +301,5 @@ input[type="radio"]:checked + .customRadio .point {
     .continue {
         width: 100%;
     }
-
 }
+
