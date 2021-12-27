@@ -225,3 +225,79 @@ input[type="radio"]:checked + .customRadio .point {
     background-color: #b5467a;
 }
 
+@media (max-width: 1115px){
+    .card{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 1000px){
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contentBody {
+        height: 600px;
+    }
+
+    .continue {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px){
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contentBody {
+        height: 660px;
+    }
+
+    .continue {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card{
+        font-size: 16px;
+    }
+
+    .third {
+        top: -40%;
+        left: 80%;
+    }
+
+    .contentBody {
+        height: 100%;
+    }
+
+    .head {
+        position: absolute;
+        top: 14%;
+        left: 7%;
+        line-height: 1.3;
+    }
+
+    .head > p:first-child {
+        color: #D65391;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    
+    .head > p:nth-child(2) {
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    .continue {
+        width: 100%;
+    }
+
+}

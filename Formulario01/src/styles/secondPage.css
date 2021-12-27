@@ -33,6 +33,23 @@ input[type="text"], input[type="email"], input[type="tel"] {
     font-size: 17px;
 }
 
+@media (max-width: 600px) {
+    .formContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    
+}
+
 
 
 
