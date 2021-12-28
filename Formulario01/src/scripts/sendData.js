@@ -10,10 +10,8 @@ function mapObject() {
 }
 
 async function submit(e) {
-    console.log(mapObject());
     let obj = mapObject();
     
-
     const options = {
         method: 'POST',
         headers: {
@@ -23,5 +21,4 @@ async function submit(e) {
     };
     //e.preventDefault();
     const response = await fetch('http://localhost:5000/send-email', options);
-    //console.log(options.body);
 }
