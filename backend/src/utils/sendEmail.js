@@ -19,14 +19,19 @@ const transporter = nodemailer.createTransport({
 
 module.exports = {
     send: async function run(e) {
-        const mailSent = await transporter.sendMail({
-            text: 'sample text',
-            subject: 'sample subject',
-            from: `Marcus <${process.env.EMAIL}>`,
-            to: ['marcusdavi.soar@gmail.com',
-                'ryck302@gmail.com'],
-            html: template.set(e)
-        });
-        console.log('Email enviado com sucesso!');
+        try {
+            const mailSent = await transporter.sendMail({
+                text: 'sample text',
+                subject: 'sample subject',
+                from: `Marcus <${process.env.EMAIL}>`,
+                to: ['marcusdavi.soar@gmail.com',
+                    'ryck302@gmail.com'],
+                html: template.set(e)
+            });
+            console.log('Email enviado com sucesso!');
+        } catch (error) {
+            window.alert('Erro ao enviar o email! Por favor tente novamente!')
+            console.error(`Erro ao enviar o email!\n${error}`);
+        }
     }
 }
