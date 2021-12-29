@@ -9,7 +9,7 @@ form {
     width: 100%;
 }
 
-img {
+#back {
     height: 30px;
     width: 40px;
     margin-right: 20px;
@@ -31,6 +31,112 @@ input[type="text"], input[type="email"], input[type="tel"] {
     outline-width: 0.4px;
     padding: 20px;
     font-size: 17px;
+}
+
+#formText {
+    align-self: center;
+    font-size: 25px;
+}
+
+.modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.282);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px 50px;
+    width: 40%;
+    height: 80%;
+    max-width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+#close {
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5%;
+    left: 85%;
+}
+
+.contentModal {
+    width: 110%;
+    height: 80%;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    overflow: scroll;
+    padding: 20px 30px;
+}
+
+.contentModal::-webkit-scrollbar {
+    width:10px;
+    height: 0px;
+}
+
+.contentModal::-webkit-scrollbar-track {
+    background:#D6D6D6;
+    border-radius: 10px;
+}
+
+.contentModal::-webkit-scrollbar-thumb {
+    background: #B1B1B1;
+    border-radius: 10px;
+}
+.contentModal p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.continueButton {
+    width: 31%;
+    height: 50px;
+    margin: 60px 0 60px 0;
+    border-radius: 10px;
+    color: white;
+    background-color: #D65391;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 0;
+    transition: background-color 0.2s ease;
+}
+
+.continueForm {
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
 @media (max-width: 600px) {
