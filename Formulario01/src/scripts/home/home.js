@@ -14,7 +14,7 @@ export default () => {
 
     <div class="cards">
         <div class="card">
-            <input type="radio" name="package" id="teste" onclick="mark()">
+            <input type="radio" name="package" id="teste" value="Simples" onclick="mark()">
             <label class="customRadio" for="teste">
                 <div class="head">
                     <p>Simples</p>
@@ -54,7 +54,7 @@ export default () => {
         </div>
 
         <div class="card">
-            <input type="radio" name="package" id="teste1" onclick="mark()">
+            <input type="radio" name="package" id="teste1" value="Completo" onclick="mark()">
             <label class="customRadio" for="teste1">
                 <div class="head">
                     <p>Completo</p>
@@ -118,7 +118,7 @@ export default () => {
         </div>
 
         <div class="card">
-            <input type="radio" name="package" id="teste2" onclick="mark()">
+            <input type="radio" name="package" id="teste2" value="Instagram" onclick="mark()">
             <label class="customRadio" for="teste2">
                 <div class="head">
                     <p>Instagram</p>
@@ -186,7 +186,7 @@ export default () => {
         </div>
 
         <div class="card">
-            <input type="radio" name="package" id="teste3" onclick="mark()">
+            <input type="radio" name="package" id="teste3" value="Empreendedor" onclick="mark()">
             <label class="customRadio" for="teste3">
                 <div class="head">
                     <p>Empreendedor</p>
@@ -258,7 +258,7 @@ export default () => {
         </div>
 
         <div class="card">
-            <input type="radio" name="package" id="teste4" onclick="mark()">
+            <input type="radio" name="package" id="teste4" value="Master" onclick="mark()">
             <label class="customRadio" for="teste4">
                 <div class="head">
                     <p>Master</p>
@@ -330,7 +330,7 @@ export default () => {
         </div>
     </div>
 
-    <a href="/Formulario01/src/pages/index.html#form" class="continue">Continuar</a>
+    <a class="continue" onclick="getPackage()">Continuar</a>
     `;
 
     container.innerHTML = template;
