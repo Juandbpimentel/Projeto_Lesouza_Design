@@ -57,7 +57,7 @@ export default () => {
                 <p> Caso exceda o limite de mudanças, será cobrada ao contratante uma taxa de R$29,90 a cada pedido de mudança.</p>
                 <p> O mockup apresentado ao cliente não pode ser alterado após a apresentação do pacote, qualquer alteração feita será realizada após o fechamento final do arquivo.</p>
             </div>
-            <a href="/src/pages/index.html#form" class="continue continueForm">Continuar</a>
+            <a href="/src/pages/index.html#form" class="continue continueForm">Confirmar</a>
         </div>
     </div>
     `;
